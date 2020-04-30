@@ -1,21 +1,17 @@
-/**
- * Single Product
- */
 .single-product {
 
 	div.product {
-
-		@include clearfix;
 		position: relative;
 
 		.woocommerce-product-gallery {
 			position: relative;
+			float: left;
 
 			.woocommerce-product-gallery__trigger {
-				display: block;
 				position: absolute;
+				top: 2em;
 				right: 1em;
-				top: 1em;
+				display: block;
 				z-index: 99;
 			}
 
@@ -24,15 +20,13 @@
 			}
 
 			.flex-control-thumbs {
-
-				@include clearfix;
 				margin: 0;
 				padding: 0;
 
 				li {
+					list-style: none;
 					cursor: pointer;
 					float: left;
-					list-style: none;
 
 					img {
 						opacity: 0.5;
